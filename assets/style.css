@@ -115,6 +115,9 @@ nav{
     height: 70%;
 
 }
+.fa-file-code,.fa-compass-drafting,.fa-laptop-code,.fa-bullhorn{
+    font-size: 4rem;
+}
 .btn-card{
    
     text-align: center;
@@ -125,9 +128,11 @@ nav{
     color: white;
     text-decoration: none;
 }
+.title-card{color: var(--text);}
 .card-2 .title-card{
     color: var(--text);
-    font-weight: bold;
+    /* font-weight: bold; */
+    padding-top: 1rem;
     padding-bottom: 20px;
 }
 .demo-container li{
@@ -156,3 +161,25 @@ nav{
     height: 50px;
     color: var(--text);
 }
+@media screen and (max-width: 768px) {
+    .menu{
+        display: none;
+    }
+    .btn-card{
+        padding-inline: 1rem;
+    }
+}
+/* @media screen and (max-width: 768px){
+    body{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 458) {
+    
+    .menu{
+        display: none;
+    }
+    .btn-card{
+        padding-inline: 1rem;
+    }
+} */
