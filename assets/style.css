@@ -1,0 +1,158 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+:root{
+    --card:#B5DDFF;
+    --sec:#9792E4;
+    --text:#0084FD;
+}
+nav{
+    background-color: #0084FD;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.container-menu{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    list-style: none;    
+}
+.logo{
+    object-fit: contain;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    height: 60px;
+   
+}
+.logo img{
+    width: 100%;
+    
+}
+.btn-nav{
+    height: 50px;
+    width: 120px;
+    text-align: center;
+    border-radius: 9rem;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+
+/* ------------------------------- */
+.container {
+	max-width: 1000px;
+	margin-inline: auto;
+	/* padding-inline: 1rem; */
+	/* se mettete il padding non viente coperto completamente il gap aggiunto a destra e a sinistra della griglia, se non ha un colore questo in realta' non e' un problema */
+}
+
+.grid {
+	--gapx: 1rem;
+	--gapy: 2rem;
+}
+
+.cells {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cell .content {
+	height: 300px;
+}
+
+.cell:nth-child(odd) .content {
+	background-color: var(--card);
+    border-radius: 1rem;
+}
+
+.cell:nth-child(even) .content {
+	background-color: var(--card);
+    border-radius: 1rem;
+}
+.grid {
+	overflow: hidden;
+}
+.cells {
+   
+	margin: 0 calc(-1 * var(--gapx) / 2) calc(-1 * var(--gapy));
+}
+.cell {
+    
+	flex-basis: 33.3333%;
+	padding: 0 calc(var(--gapx) / 2) var(--gapy);
+}
+.cell-hero {
+	flex-basis: 66.6666%;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+}
+.demo-container{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    height: 70%;
+
+}
+.btn-card{
+   
+    text-align: center;
+    border-radius: 9rem;
+    padding: 10px;
+    padding-inline: 60px;
+    background-color: var(--text);
+    color: white;
+    text-decoration: none;
+}
+.card-2 .title-card{
+    color: var(--text);
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.demo-container li{
+    margin-top: 30px ;
+}
+.img-phone{
+    object-fit: contain;
+    display: flex;
+    align-self: flex-end;
+    width: 35%;
+    
+    /* height: 200px; */
+}
+.img-phone img{
+    width: 100%;
+}
+.card-2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+    padding-inline: 2rem;
+}
+.card-2 :first-child{
+    display: block;
+    height: 50px;
+    color: var(--text);
+}
