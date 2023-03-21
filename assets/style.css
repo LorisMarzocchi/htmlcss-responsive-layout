@@ -189,50 +189,6 @@ nav{
 .card-2 :first-child{
     color: var(--text);
 }
-@media screen and (max-width: 768px) {
-    .fa-bars{
-        display: block;
-        padding-right: 20px;
-    }
-    .menu{
-        display: none;
-    }
-    .container-menu{
-        padding-inline: 20px;
-    }
-    .btn-card{
-        padding-inline: 1rem;
-    }
-    .card-2{
-        display: block;
-        text-align: center;
-        padding-inline: 2rem;
-        padding-top: 54px;
-    }
-    .img-phone{
-        width: 100%;
-        padding-inline: 45px;
-        padding-top: 60px;
-        object-fit: contain;
-    }
-    .content{
-        display: block;
-    }
-    .demo-container{
-        width: 100%;
-        display: block;
-        padding-inline: 20px;
-       
-    }
-    /* .menu2{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 450px;
-        list-style: none;    
-    } */
-}
 
 /* ----------------------------- */
 .plan-section{
@@ -305,46 +261,8 @@ nav{
     margin-bottom: 20px;
 }
 /* ----------------------------------- */
-@media screen and (max-width: 768px) {
-    .plan-section {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        /* justify-content: space-around; */
-        padding-inline: 0;
-        background-color: var(--sec);
-    }
-    .container-img-left {
-        display: flex;
-        flex-direction: column;
-        flex: 0 1 auto;
-        padding-inline: 20px;
-        padding-top: 50px;
-        margin-bottom: 50px;
-        margin-right: 35px;
-    }
-    .img-rigt {
-        object-fit: contain;
-        align-self: center;
-        width: 100%;
-        height: 100%;
-        margin-bottom: 1rem;
-    }
-    .container-img-right {
-        display: flex;
-        flex-direction: column;
-        align-self: flex-end;
-        flex: 0 1 auto;
-        border-radius: 20px;
-        background-color: white;
-        margin-bottom: 50px;
-    }
 
-    
-}
 /* -------------------------------- */
-
-
 
 
 .testimonials-container{
@@ -396,12 +314,7 @@ nav{
     margin-top: 20px;
 }
 
-@media screen and (max-width: 768px) {
-    .section-testimonials{
-        padding-inline: 20px;
-    }
-    
-}
+
 /* ------------------------------------ */
 
 .benefit-container{
@@ -456,24 +369,6 @@ nav{
     text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-    .benefit-card {
-        width: calc(100% / 2 - 1rem);
-        background-color: white;
-        color: var(--sec);
-        border-radius: 20px;
-        padding: 20px;
-    }
-    .benefit-card-container {
-        padding-top: 50px;
-        padding-inline: 30px;
-        gap: 1rem;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    
-}
 /* --------------------------------------- */
 .about-us-container{
     max-width: 1000px;
@@ -547,21 +442,7 @@ i .fa-quote-left{
     right: 0;
 }
 
-@media screen and (max-width: 768px) {
-    .btn-about {
-        white-space: nowrap;
-    }
-    .about-us-container{
-        padding-inline: 20px;
-    }
-    .about-text{
-        padding-left: 40px;
-        padding-right: 0;
-    }
-    .about-img-container{
-        padding-inline: 20px;
-    }
-}
+
 /* ------------------------------------------ */
 .pricing{
     background-color: var(--sec);
@@ -620,6 +501,80 @@ i .fa-quote-left{
 .footer-link > a{
     color: var(--sec);
 }
+@media screen and (max-width: 768px) {
+    .fa-bars{
+        display: block;
+        padding-right: 20px;
+    }
+    .menu{
+        display: none;
+    }
+    .container-menu{
+        padding-inline: 20px;
+    }
+    .btn-card{
+        padding-inline: 1rem;
+    }
+    .card-2{
+        display: block;
+        padding-top: 54px;
+    }
+    .img-phone{
+        width: 100%;
+        padding-inline: 45px;
+        padding-top: 60px;
+        object-fit: contain;
+    }
+    .content{
+        display: block;
+    }
+    .demo-container{
+        width: 100%;
+        display: block;
+        padding-inline: 20px;
+       
+    }
+    .plan-section {
+
+        display: flex;
+        flex-wrap: wrap;
+        padding-inline: 0;
+    }
+    .container-img-left {
+        flex: 0 1 auto;
+        padding-inline: 20px;
+    }
+    .img-rigt {
+        width: 100%;
+        height: 100%;
+    }
+    .container-img-right {
+        flex: 0 1 auto;
+    }
+    .section-testimonials{
+        padding-inline: 20px;
+    }
+    .benefit-card {
+        width: calc(100% / 2 - 1rem);
+    }
+    .benefit-card-container {
+        padding-inline: 30px;
+    }
+    .btn-about {
+        white-space: nowrap;
+    }
+    .about-us-container{
+        padding-inline: 20px;
+    }
+    .about-text{
+        padding-left: 40px;
+        padding-right: 0;
+    }
+    .about-img-container{
+        padding-inline: 20px;
+    }
+}
+
 @media screen and (max-width: 375px) {
     *{
         font-size: 0.9rem;
@@ -681,3 +636,19 @@ i .fa-quote-left{
         margin-right: 95px;
     }
 }
+
+
+
+
+
+
+
+
+/* .menu2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 450px;
+        list-style: none;    
+    } */
