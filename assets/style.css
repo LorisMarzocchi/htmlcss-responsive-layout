@@ -505,7 +505,9 @@ nav{
     }
     .container-img-right {
         flex: 0 1 auto;
-        margin-inline: 0;
+        margin-inline: 50px;
+        padding-inline: 30px;
+    
     }
     .section-testimonials{
         padding-inline: 20px;
@@ -579,6 +581,9 @@ nav{
     }
     .about-us-container{
         display: block;
+    }
+    .container-img-right{
+        margin-inline: 20px;
     }
     .pricing{
         padding-inline: 20px;
