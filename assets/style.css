@@ -11,12 +11,15 @@
     --text:#0084FD;
     --colorp:#7893AA;
 }
-.fa-grip-lines{
+.fa-bars{
     position: absolute;
     top: 50px;
     right: 25px;
     display: flex;
     flex-direction: column;
+    color: white;
+    font-size: 1.5rem;
+    display: none;
 }
 nav{
     background-color: #0084FD;
@@ -69,8 +72,7 @@ nav{
 .container {
 	max-width: 1000px;
 	margin-inline: auto;
-	/* padding-inline: 1rem; */
-	/* se mettete il padding non viente coperto completamente il gap aggiunto a destra e a sinistra della griglia, se non ha un colore questo in realta' non e' un problema */
+    margin-bottom: 35px;
 }
 
 .grid {
@@ -98,16 +100,15 @@ nav{
 	background-color: var(--card);
     border-radius: 1rem;
 }
-.grid {
-	/* overflow: hidden; */
-}
+/* .grid {
+	overflow: hidden;
+} */
 .cells {
-    
+
 	margin: 0 calc(-1 * var(--gapx) / 2) calc(-1 * var(--gapy));
 }
 .cell {
     display: flex;
-    
     align-items: stretch;
 	flex-basis: 33.3333%;
 	padding: 0 calc(var(--gapx) / 2) var(--gapy);
@@ -157,6 +158,7 @@ nav{
     text-decoration: none;
 }
 .title-card{color: var(--text);}
+.title-card.big{margin-bottom: 20px;}
 
 .card-2 .title-card{
     color: var(--text);
@@ -187,29 +189,31 @@ nav{
 .card-2 :first-child{
     color: var(--text);
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
+    .fa-bars{
+        display: block;
+        padding-right: 20px;
+    }
     .menu{
         display: none;
     }
     .container-menu{
-        padding-inline: 50px;
+        padding-inline: 20px;
     }
     .btn-card{
         padding-inline: 1rem;
     }
     .card-2{
         display: block;
-        
         text-align: center;
         padding-inline: 2rem;
         padding-top: 54px;
     }
     .img-phone{
-        width: 65%;
+        width: 100%;
         padding-inline: 45px;
         padding-top: 60px;
         object-fit: contain;
-        
     }
     .content{
         display: block;
@@ -229,6 +233,7 @@ nav{
         list-style: none;    
     } */
 }
+
 /* ----------------------------- */
 .plan-section{
     /* width: 100%; */
@@ -266,6 +271,7 @@ nav{
     border-radius: 20px;
     background-color: white; 
     margin-bottom: 50px;
+    margin-inline: 40px;
 }
 .img-rigt{
     object-fit: contain;
@@ -460,9 +466,7 @@ nav{
     }
     .benefit-card-container {
         padding-top: 50px;
-        /* max-width: 1000px; */
-        /* margin: auto; */
-        padding-inline: 20px;
+        padding-inline: 30px;
         gap: 1rem;
         display: flex;
         justify-content: space-between;
@@ -551,7 +555,11 @@ i .fa-quote-left{
         padding-inline: 20px;
     }
     .about-text{
-        padding-right: 20px;
+        padding-left: 40px;
+        padding-right: 0;
+    }
+    .about-img-container{
+        padding-inline: 20px;
     }
 }
 /* ------------------------------------------ */
@@ -611,4 +619,65 @@ i .fa-quote-left{
 }
 .footer-link > a{
     color: var(--sec);
+}
+@media screen and (max-width: 375px) {
+    *{
+        font-size: 0.9rem;
+
+    }
+    .cells {
+        display: block;
+        padding-inline: 20px;
+        margin-bottom: 30px;
+    }
+    /* .plan-section{
+        padding-inline: 20px;
+    } */
+    
+    .section-testimonials{
+        padding-inline: 75px;
+    }
+    .testimonials h2{
+        font-size: 1.5rem;
+    }
+    .rev-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 20px;
+        padding-inline: 12px;
+    }
+    .reviews {
+        display: flex;
+        height: 100%;
+        margin-top: 30px;
+        padding-bottom: 20px;
+        background-color: var(--sec);
+        border-radius: 2rem;
+    }
+    .benefit-card{
+        width: 100%;
+    }
+    .about-text{
+        padding-left: 20px;
+        padding-right: 0;
+    }
+    
+    .benefit-container{
+        padding-inline: 20px;
+    }
+    .about-us-container{
+        display: block;
+    }
+    .pricing{
+        padding-inline: 20px;
+    }
+    .footer{
+        padding-inline: 26px;
+    }
+    .about-img-container {
+        padding: 0;
+        margin-right: 95px;
+    }
 }
